@@ -30,6 +30,8 @@ function make_dir_link () {
 	ln -nsf $src $dst
 }
 
-make_file_link ./config/nvim/init.lua ~/.config/nvim/init.lua
-make_dir_link ./config/nvim/lua ~/.config/nvim/lua
+
+make_file_link $(pwd)/config/nvim/init.lua ~/.config/nvim/init.lua
+make_dir_link $(pwd)/config/nvim/lua ~/.config/nvim/lua
+make_dir_link $(pwd)/config/nvim/after ~/.config/nvim/after
 
